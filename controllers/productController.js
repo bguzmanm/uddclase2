@@ -1,13 +1,7 @@
-const producto1 = {
-  id: 1,
-  name: "iphone 15",
-  price: 1500,
-};
-const producto2 = {
-  id: 2,
-  name: "iphone 15 pro",
-  price: 1800,
-};
+const {Product} = require("../models/product");
+
+const producto1 = new Product(1, "iphone 15 lite", 1500);
+const producto2 = new Product(2, "iphone 15 pro", 1800);
 /* 
 C -> Create -> Crear
 R -> Read -> Leer
